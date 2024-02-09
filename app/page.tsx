@@ -4,7 +4,7 @@ import ProductCard from './components/ProductCard/ProductCard'
 
 export default function Home() {
   return (
-    <main><h1>Hello & FJB</h1>
+    <main><h1>Hello Next.js</h1>
     <Link href="/users">Users</Link>
     <ProductCard />
     </main>
