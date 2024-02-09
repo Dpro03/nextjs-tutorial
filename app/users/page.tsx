@@ -3,7 +3,7 @@ import React from 'react';
 interface User {
   id: number;
   name: string;
-  address: { street: string; city: string };
+  address: { street: string; city: string  ; suite: string };
   email: string; 
 }
 
@@ -22,6 +22,7 @@ const UsersPage = async () => {
             <th>Name</th>
             <th>Email</th>
             <th>Address</th>
+
           </tr>
         </thead>
         <tbody>
@@ -29,11 +30,12 @@ const UsersPage = async () => {
             <tr key={user.id}>
               <td>{user.name}</td>
               <td>{user.email}</td> 
-              <td>{user.address.street}, {user.address.city}</td>
+              <td>{user.address.street}, {user.address.suite}, {user.address.city}</td>
             </tr>
           ))}
         </tbody>
       </table>
+      
     </>
   );
 }
